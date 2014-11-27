@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.01"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:layout_weight="0.01"
+            android:orientation="horizontal" >
+
+            <view
+                android:id="@+id/viewLeftEye"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                class="org.opencv.samples.fd.FdActivity$leftEyeView" />
+
+            <view
+                android:id="@+id/viewLeftEyeBinary"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                class="org.opencv.samples.fd.FdActivity$leftEyeBinaryView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:layout_weight="0.01"
+            android:orientation="horizontal" >
+
+            <view
+                android:id="@+id/viewRightEye"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                class="org.opencv.samples.fd.FdActivity$rightEyeView" />
+
+            <view
+                android:id="@+id/viewRightEyeEqualized"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                class="org.opencv.samples.fd.FdActivity$rightEyeEqualizedView" />
+
+            <view
+                android:id="@+id/viewRightEyeEqualizedInverted"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                class="org.opencv.samples.fd.FdActivity$rightEyeEqualizedInvertedView" />
+
+            <view
+                android:id="@+id/viewRightEyeEqualizedEroded"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                class="org.opencv.samples.fd.FdActivity$rightEyeEqualizedErodedView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:layout_weight="0.01"
+            android:orientation="horizontal" >
+
+            <view
+                android:id="@+id/viewRightEyeBinary"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                class="org.opencv.samples.fd.FdActivity$rightEyeBinaryView" />
+
+            <view
+                android:id="@+id/viewRightEyeBinaryWithContours"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                class="org.opencv.samples.fd.FdActivity$rightEyeBinaryViewWithContours" />
+
+            <view
+                android:id="@+id/viewRightEyeBinaryMeanIntensity"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                class="org.opencv.samples.fd.FdActivity$rightEyeBinaryViewMeanIntensity" />
+
+            <view
+                android:id="@+id/viewRightEyeBinaryWithPupil"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                class="org.opencv.samples.fd.FdActivity$rightEyeBinaryViewWithPupil" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:layout_weight="0.01"
+            android:orientation="horizontal" >
+
+            <view
+                android:id="@+id/viewRightEyeColorWithPupilDrawn"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                class="org.opencv.samples.fd.FdActivity$rightEyeColorViewWithPupilDrawn" />
+
+             <view
+                android:id="@+id/viewRightEyePupilCentered"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                class="org.opencv.samples.fd.FdActivity$rightEyeViewWithPupilCentered" />  
+        </LinearLayout>
+
+        <view
+            android:id="@+id/viewBothEyes"
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:layout_weight="0.01"
+            class="org.opencv.samples.fd.FdActivity$bothEyesView" />
+
+        <view
+            android:id="@+id/viewBothEyesEqualized"
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:layout_weight="0.01"
+            class="org.opencv.samples.fd.FdActivity$bothEyesEqualizedView" />
+
+        <view
+            android:id="@+id/viewBothEyesBinary"
+            android:layout_width="wrap_content"
+            android:layout_height="0px"
+            android:layout_weight="0.01"
+            class="org.opencv.samples.fd.FdActivity$bothEyesBinaryView" />
+        
+    </LinearLayout>
+
+    <org.opencv.samples.fd.FdView
+        android:id="@+id/fdView1"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02" />
+
+</LinearLayout>
